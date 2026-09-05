@@ -7,7 +7,6 @@ from app.core.tracker import VehicleTracker
 from app.api.routes import router as db_router
 from app.db.model import db_init, insert_video_info, insert_tracks_info, update_video_status
 
-db_init()
 
 app = FastAPI()
 app.include_router(db_router)
