@@ -3,11 +3,11 @@ import psycopg2
 
 def get_conn():
     return psycopg2.connect(
-        host=os.environ.get("PGHOST"),
-        port=os.environ.get("PGPORT"),
-        dbname=os.environ.get("PGDATABASE"),
-        user=os.environ.get("PGUSER"),
-        password=os.environ.get("PGPASSWORD")
+        host=os.environ["PGHOST"],
+        port=os.environ["PGPORT"],
+        dbname=os.environ["PGDATABASE"],
+        user=os.environ["PGUSER"],
+        password=os.environ["PGPASSWORD"]
     )
 
 def db_init():
