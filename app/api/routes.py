@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from db.model import get_video, get_tracks_by_video
+from app.db.model import get_video, get_tracks_by_video
 
 router = APIRouter(prefix='/videos', tags=['videos'])
 
