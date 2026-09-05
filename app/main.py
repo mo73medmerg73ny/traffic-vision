@@ -3,9 +3,9 @@ import cv2
 import numpy as np
 from fastapi import FastAPI, UploadFile, BackgroundTasks
 from fastapi.responses import FileResponse
-from core.tracker import VehicleTracker
-from api.routes import router as db_router
-from db.model import db_init, insert_video_info, insert_tracks_info, update_video_status
+from app.core.tracker import VehicleTracker
+from app.api.routes import router as db_router
+from app.db.model import db_init, insert_video_info, insert_tracks_info, update_video_status
 
 db_init()
 
