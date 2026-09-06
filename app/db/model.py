@@ -89,7 +89,7 @@ def get_video(video_id):
     cur = conn.cursor()
 
     cur.execute(
-        "SELECT id, filename, status, total_vehicles, FROM videos WHERE id = %s",
+        "SELECT id, filename, status, total_vehicles FROM videos WHERE id = %s",
         (video_id,)
     )
 
