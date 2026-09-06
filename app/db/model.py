@@ -42,7 +42,7 @@ def insert_video_info(filename, status, total_vehicles):
         (filename, status, total_vehicles)
     )
 
-    video_id = cur.fetchall()[0]
+    video_id = cur.fetchone()[0]
 
     conn.commit()
     cur.close()
